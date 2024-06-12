@@ -1,0 +1,2708 @@
+ 
+         body {
+             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+             margin: 0;
+             padding: 0;
+         }
+         .website-wrapper {
+             width: 100%;
+             height: auto;
+             margin-left: auto;
+             margin-right: auto;
+             flex-wrap: wrap;
+         }
+         .navbar-wrapper {
+             width: 100%;
+             height: auto;
+             margin-left: auto;
+             margin-right: auto;
+             flex-wrap: wrap;
+             align-items: center;
+             justify-content: center;
+             background-color: #fff;
+             /* margin-top: 20px; */
+             /* margin-bottom: 50px; */
+             display: flex;
+             padding: 50px ;
+             position: fixed;
+             top: 0;
+             left: 0;
+             z-index: 1;
+             /* margin-bottom: 50px; */
+         }
+         nav ul {
+             list-style-type: none;
+             display: flex;
+             align-items: center;
+             justify-content: space-evenly;
+             margin: 0;
+             padding: 10px;
+             flex: 1;
+             /* font-size: 15px;
+             font-weight: 600; */
+
+             /* position: sticky; */
+
+         }
+         nav ul li {
+             display: inline-block;
+             position: relative;
+             margin: 0 10px;
+             /* font-size: 15px;
+             font-weight: 600; */
+
+         }
+         nav ul li a {
+             display: block;
+             padding: 10px 20px;
+             text-decoration: none;
+             color: #000;
+             transition: background-color 0.3s;
+             font-size: 20px;
+             font-weight: 600;
+
+
+         }
+         nav ul li a:hover {
+             background-color: #f0f0f0;
+             color: #333;
+         }
+         nav ul li ul {
+             display: none;
+             position: absolute;
+             background-color: #fff;
+             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+             border: 1px solid #ccc;
+         }
+         nav ul li:hover ul {
+             display: block;
+         }
+         nav ul li ul li {
+             display: block;
+             white-space: nowrap;
+         }
+         nav ul li ul li a {
+             display: block;
+             padding: 10px 20px;
+             text-decoration: none;
+             color: #333;
+             transition: background-color 0.3s;
+             font-size: 15px;
+         }
+         nav ul li ul li a:hover {
+             background-color: #f0f0f0;
+         }
+         
+         .home a {
+             color: rgb(80, 151, 243);
+             font-size: 20px;
+             font-weight: 600;
+         }
+         .request-demo {
+             background-color: #39ff14;
+             color: #fff;
+             padding: 20px 20px;
+             border-radius: 10px;
+             display: flex;
+             align-items: center;
+             cursor: pointer;
+             font-size: 20px;
+             font-weight: 600;
+             /* font-size: 15px; */
+         }
+         .request-demo:hover {
+             background-color: #32e60d;
+         }
+         .request-demo i {
+             margin-left: 8px;
+         }
+
+         .hamburger{
+            position: relative;
+            display: block;
+            width: 35px;
+            /* height: 35px; */
+            cursor: pointer;
+            appearance: none;
+            outline: none;
+            background: none;
+            border: none;
+
+         }
+
+         .hamburger .bar, .hamburger:after, .hamburger:before{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 5px;
+            background-color: #000;
+            margin: 6px 0px;
+            transition: 0.4s;
+         }
+
+         .hamburger.is-active:before{
+            transform: rotate(-45deg) translate(-9px, 6px);
+         }
+         .hamburger.is-active:after{
+            transform: rotate(45deg) translate(-9px, -8px);
+         }
+         .hamburger.is-active.bar{
+            opacity: 0;
+         }
+
+         .mobile-nav{
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 100%;
+            width: 100%;
+            min-height: 100vh;
+            z-index: 98;
+            background-color: #fff;
+            padding-top: 120px;
+            transition: 0.4s;
+         }
+
+         .mobile-nav.is-active {
+            left: 0;
+         }
+
+         .mobile-nav a{
+            display: block;
+            text-align: center;
+            /* margin: 0 auto 16px; */
+            padding: 12px 16px;
+            background-color: #fff;
+            /* width: fit-content; */
+            width: 100%;
+            max-width: 200px;
+            margin: 0 auto 16px;
+            text-decoration: none;
+         }
+
+         .mobile-nav a:hover{
+            background-color: #9e9e9e;
+           
+         }
+
+         @media (min-width: 768px){
+            .mobile-nav{
+                display: none;
+            }
+            .hamburger{
+                display: none;
+            }
+         }
+
+
+         /* leading business section starts here */
+              .leading-business__wrapper{
+                width: 100%;
+                height: auto;
+                flex-wrap: wrap;
+                margin: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                
+              }
+
+              #main-text{
+                text-align: center;
+                font-weight: 600;
+                font-size: 60px;
+                margin: 15px;
+              }
+
+              #leading-business__desc{
+                text-align: center;
+                font-size: 20px;
+                margin: 15px;
+                font-weight: 500;
+              }
+
+              .business-btn__wrapper{
+                display: flex;
+                width: 70%;
+                height: auto;
+                flex-wrap: wrap;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                align-items: center;
+                justify-content: center;
+              }
+
+              #request-demo__btn {
+                background-color: #39ff14;
+                color: #fff;
+                padding: 20px 30px;
+                border-radius: 5px;
+                align-items: center;
+                cursor: pointer;
+                margin: 15px;
+            }
+            #request-demo__btn:hover {
+                background-color: #32e60d;
+                color: #fff;
+            }
+
+            #request-demo__btn i {
+                margin-left: 8px;
+            }
+
+            #sign-up__btn{
+                background-color:#fff ;
+                color:#39ff14 ;
+                padding: 20px 30px;
+                border-radius: 5px;
+                align-items: center;
+                cursor: pointer;
+                margin: 15px;
+                border: 1px solid #39ff14;
+            }
+
+            #sign-up__btn:hover {
+                background-color: #32e60d;
+                color: #fff;
+            }
+            #sign-up__btn i {
+                margin-left: 8px;
+            }
+
+            .business-image__wrapper{
+                width: 90%;
+                height: auto;
+                flex-wrap: wrap;
+                margin-top: 10px;
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: center;
+                
+
+            }
+
+            .business-hero__image{
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+           
+
+         /* leading business section ends here */
+
+         /* trusted financial firms section starts here */
+         .trusted-firms__wrapper{
+             width: 90%;
+             height: auto;
+             flex-wrap: wrap;
+             margin-top: 10px;
+             margin-left: auto;
+             margin-right: auto;
+             justify-content: center;
+             
+         }
+
+         #trusted-text{
+                text-align: center;
+                font-weight: 600;
+                font-size: 30px;
+                margin: 15px;
+
+         }
+
+         #trusted-desc{
+            text-align: center;
+            font-size: 20px;
+            margin: 15px;
+            font-weight: 500;
+         }
+
+         .firms-grid__wrapper{
+            width: 80%;
+            height: auto;
+            display: grid;
+            gap: 7px;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: auto auto auto auto ;
+            background-color: #fff;
+            padding: 10px;
+            align-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            
+         }
+
+         .firms-logo{
+            object-fit: cover;
+            background-repeat: no-repeat;
+            background-size: contain;
+         }
+         .firms-logo:hover{
+           background-color: #e2dfdf;
+         }
+
+         /* trusted financial firms section ends here */
+     
+
+         /* why valutico section starts here */
+         .why-valutico__wrapper{
+            width: 100%;
+            height: auto;
+            flex-wrap: wrap;
+            margin-top: 25px;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+            background-color: #000;  
+         }
+
+         #why-valutico__text{
+            text-align: center;
+                font-weight: 700;
+                font-size: 35px;
+                margin-top: 25px;
+                margin-left: 25px;
+                margin-right: 25px;
+                color: #fff;
+                padding-top: 30px;
+                /* padding-top: 10px; */
+         }
+
+         #why-valutico__desc{
+            text-align: center;
+            font-size: 20px;
+            margin: 15px;
+            font-weight: 600;
+            color: #fff;
+            padding: 10px;
+
+         }
+
+         .valutico_article__wrapper{
+            display: flex;
+            width: 100%;
+            height: auto;
+            flex-wrap: wrap;
+            margin-top: 25px;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            justify-content: center;
+            background-color: #000;
+            justify-content: space-evenly;
+
+         }
+
+         .why-valutico__secure{
+            /* display: inline-block; */
+            width: 20%;
+            height: auto;
+            flex-wrap: wrap;
+            text-align: left;
+            justify-content: left;
+            margin: 20px;
+            /* background-color: #000; */
+
+         }
+         #secure-text{
+            text-align: left;
+            justify-content: left;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            /* padding: 10px */
+              
+         }
+
+         #secure-desc{
+            text-align: left;
+            font-size: 14px;
+            /* margin: 15px; */
+            font-weight: 550;
+            color: #fff;
+            /* padding: 10px; */
+
+         }
+         .why-valutico__reliable{
+            /* display: inline-block; */
+            width: 20%;
+            height: auto;
+            flex-wrap: wrap;
+            text-align: left;
+            justify-content: left;
+            margin: 20px;
+            /* background-color: #000; */
+
+         }
+         #reliable-text{
+            text-align: left;
+            justify-content: left;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            /* padding: 10px */
+              
+         }
+
+         #reliable-desc{
+            text-align: left;
+            font-size: 14px;
+            /* margin: 15px; */
+            font-weight: 550;
+            color: #fff;
+            /* padding: 10px; */
+
+         }
+         .why-valutico__dedicated{
+            /* display: inline-block; */
+            width: 20%;
+            margin: 20px;
+            height: auto;
+            flex-wrap: wrap;
+            text-align: left;
+            justify-content: left;
+            /* background-color: #000; */
+
+         }
+         #dedicated-text{
+            text-align: left;
+            justify-content: left;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            /* padding: 10px */
+              
+         }
+
+         #dedicated-desc{
+            text-align: left;
+            font-size: 14px;
+            /* margin: 15px; */
+            font-weight: 550;
+            color: #fff;
+            /* padding: 10px; */
+
+         }
+
+         /* why valutico section ends here */
+
+         /* Accurate valuations  section starts here */
+
+         .accurate-valuation__wrapper{
+            /* display: flex; */
+            width: 90%;
+            height: auto;
+            flex-wrap: wrap;
+            margin-top: 25px;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            justify-content: center;
+            /* background-color: #000; */
+            /* justify-content: space-evenly; */
+
+         }
+
+         #accurate-valuation__header{
+            text-align: center;
+            font-weight: 700;
+            font-size: 25px;
+            margin-top: 25px;
+            margin-left: 25px;
+            margin-right: 25px;
+            /* color: #fff; */
+            padding-top: 30px;
+            /* padding-top: 10px; */
+
+         }
+
+         #accurate-valuation__desc{
+            text-align: center;
+            font-size: 20px;
+            margin: 15px;
+            font-weight: 500;
+            /* color: #fff; */
+            padding: 10px;
+
+         }
+
+         .accurate-valuation__section{
+             display: grid;
+             grid-template-columns: 30% 60%;
+             width: 100%;
+             height: auto;
+             /* flex-wrap: wrap; */
+             margin-top: 25px;
+             /* margin-left: auto; */
+             /* margin-right: auto; */
+             /* align-items: left; */
+             /* justify-content: space-between; */
+
+         }
+
+         .accurate-articles__wrapper{
+            display: block;
+            width: 90%;
+             height: auto;
+             flex-wrap: wrap;
+             margin-top: 25px;
+             margin-left: 100px;
+             
+             justify-content: space-between;
+         }
+
+         .personalise-report__wrapper{
+             width: 100%;
+             height: auto;
+             flex-wrap: wrap;
+             margin-top: 10px;
+             padding: 5px;
+             margin-left: auto;
+             margin-right: auto;
+             align-items: left;
+
+         }
+
+
+         #personalise-text{
+            text-align: left;
+            justify-content: left;
+            font-size: 20px;
+            font-weight: 700;
+
+         }
+
+         #personalise-desc{
+            text-align: left;
+            justify-content: left;
+            font-size: 17px;
+            font-weight: 500;
+
+         }
+
+         .valuation-method__wrapper{
+             
+             width: 100%;
+             height: auto;
+             flex-wrap: wrap;
+             margin-top: 10px;
+             margin-left: auto;
+             margin-right: auto;
+             align-items: left;
+             padding: 5px;
+
+         }
+
+         #valuation-text{
+            text-align: left;
+            justify-content: left;
+            font-size: 20px;
+            font-weight: 700;
+
+
+         }
+         #valuation-desc{
+            text-align: left;
+            justify-content: left;
+            font-size: 17px;
+            font-weight: 500;
+
+         }
+
+         .fast-access__wrapper{
+             
+             width: 100%;
+             height: auto;
+             flex-wrap: wrap;
+             margin-top: 10px;
+             margin-left: auto;
+             margin-right: auto;
+             align-items: left;
+             padding: 5px;
+
+
+         }
+         #fast-text{
+            text-align: left;
+            justify-content: left;
+            font-size: 20px;
+            font-weight: 600;
+         }
+
+         #fast-desc{
+            text-align: left;
+            justify-content: left;
+            font-size: 17px;
+            font-weight: 500;
+
+         }
+
+         .valuation-image__wrapper{
+             display: flex; 
+              width: 100%;
+             height: auto;
+             flex-wrap: wrap;
+             margin-top: 10px;
+             margin-left: 30%; 
+              margin-right: auto; 
+              /* align-items: left;  */
+              justify-content: center;
+             /* padding: 10px; */
+             object-fit: cover;
+             background-repeat: no-repeat;
+            background-size: contain;
+          }
+         
+             
+         /* Accurate valuations section ends here */ 
+
+         /* request demo button section starts here */
+         
+         .request-demo__wrapper{
+            width: 17%;
+             height: auto;
+             flex-wrap: wrap;
+             margin-top: 10px;
+             margin-left: auto;
+             margin-right: auto;
+             align-items: center;
+             padding: 10px;
+             text-align: center;
+
+          }
+
+          .request-demo__btn {
+            width: 20px;
+            height: auto;
+            background-color: #39ff14;
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+            font-size: 20px;
+             font-weight: 600;
+        }
+        .request-demo__btn:hover {
+            background-color: #32e60d;
+        }
+        .request-demo__btn i {
+            margin-left: 8px;
+        }
+
+         /* request demo button section ends here */ 
+        
+        
+        
+        
+         
+
+
+
+         /* small screen (mobile 480px) */
+
+
+
+         @media (min-width :480px){
+
+            .website-wrapper {
+                width: 100%;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                flex-wrap: wrap;
+            }
+            .navbar-wrapper {
+                width: 100%;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+                
+                display: flex;
+                padding: 20px ;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+            nav ul {
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                margin: 0;
+                padding: 10px;
+                flex: 1;
+                
+   
+            }
+            nav ul li {
+                display: inline-block;
+                position: relative;
+                margin: 0 10px;
+                
+   
+            }
+            nav ul li a {
+                display: block;
+                padding: 10px 20px;
+                text-decoration: none;
+                color: #000;
+                transition: background-color 0.3s;
+                font-size: 20px;
+                font-weight: 600;
+                display: none;
+   
+   
+            }
+            nav ul li a:hover {
+                background-color: #f0f0f0;
+                color: #333;
+            }
+            nav ul li ul {
+                display: none;
+                position: absolute;
+                background-color: #fff;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                border: 1px solid #ccc;
+                display: none;
+            }
+            nav ul li:hover ul {
+                display: block;
+            }
+            nav ul li ul li {
+                display: block;
+                white-space: nowrap;
+            }
+            nav ul li ul li a {
+                display: block;
+                padding: 10px 20px;
+                text-decoration: none;
+                color: #333;
+                transition: background-color 0.3s;
+                font-size: 15px;
+            }
+            nav ul li ul li a:hover {
+                background-color: #f0f0f0;
+            }
+            
+            .home a {
+                color: rgb(80, 151, 243);
+                font-size: 20px;
+                font-weight: 600;
+                display: none;
+            }
+            .request-demo {
+                background-color: #39ff14;
+                color: #fff;
+                padding: 20px 20px;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                font-size: 20px;
+                font-weight: 600;
+                display: none;
+            }
+            .request-demo:hover {
+                background-color: #32e60d;
+            }
+            .request-demo i {
+                margin-left: 8px;
+            }
+   
+   
+            /* leading business section starts here */
+                 .leading-business__wrapper{
+                   width: 100%;
+                   height: auto;
+                   flex-wrap: wrap;
+                   margin-left: auto;
+                   margin-right: auto;
+                   
+                 }
+   
+                 #main-text{
+                   text-align: center;
+                   font-weight: 600;
+                   font-size: 30px;
+                   margin-top: 35px;
+                   text-wrap:wrap;
+                 }
+   
+                 #leading-business__desc{
+                   text-align: center;
+                   font-size: 19.5px;
+                   
+                   font-weight: 500;
+                   padding-left: 25px;
+                   padding-right: 25px;
+                   text-wrap: wrap;
+                   line-height: 30px;
+                 }
+   
+                 .business-btn__wrapper{
+                   display: flex;
+                   width: 100%;
+                   height: auto;
+                   flex-wrap: wrap;
+                   margin-top: 5px;
+                   margin-left: auto;
+                   margin-right: auto;
+                   align-items: center;
+                   justify-content: center;
+                 }
+   
+                 #request-demo__btn {
+                   background-color: #39ff14;
+                   color: #fff;
+                   padding: 15px 20px;
+                   border-radius: 5px;
+                   align-items: center;
+                   cursor: pointer;
+                   margin: 15px;
+               }
+               #request-demo__btn:hover {
+                   background-color: #32e60d;
+                   color: #fff;
+               }
+   
+               #request-demo__btn i {
+                   margin-left: 8px;
+               }
+   
+               #sign-up__btn{
+                   background-color:#fff ;
+                   color:#39ff14 ;
+                   padding: 15px 30px;
+                   border-radius: 5px;
+                   align-items: center;
+                   cursor: pointer;
+                   margin: 15px;
+                   border: 1px solid #39ff14;
+               }
+   
+               #sign-up__btn:hover {
+                   background-color: #32e60d;
+                   color: #fff;
+               }
+               #sign-up__btn i {
+                   margin-left: 8px;
+               }
+   
+               .business-image__wrapper{
+                   width: 90%;
+                   height: auto;
+                   flex-wrap: wrap;
+                   margin-top: 70px;
+                   margin-left: auto;
+                   margin-right: auto;
+                   justify-content: center;
+                   
+   
+               }
+   
+               .business-hero__image{
+                   width: 100%;
+                   height: auto;
+
+                   object-fit: cover;
+                   background-repeat: no-repeat;
+                   background-size: contain;
+               }
+              
+   
+            /* leading business section ends here */
+   
+            /* trusted financial firms section starts here */
+            .trusted-firms__wrapper{
+                width: 90%;
+                height: auto;
+                flex-wrap: wrap;
+                margin-bottom: 150px;
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: center;
+                
+            }
+   
+            #trusted-text{
+                   text-align: center;
+                   font-weight: 600;
+                   font-size: 25px;
+                   margin: 20px;
+                   line-height: 40px;
+                   padding: 10px;
+   
+            }
+   
+            #trusted-desc{
+               text-align: center;
+               font-size: 20px;
+               margin: 15px;
+               font-weight: 500;
+               padding: 10px;
+
+            }
+   
+            .firms-grid__wrapper{
+               width: 90%;
+               height: auto;
+               display: grid;
+               gap: 7px;
+               grid-template-columns: 50% 50% ;
+               grid-template-rows: auto auto auto auto ;
+               background-color: #fff;
+               padding: 10px;
+               align-content: center;
+               margin-left: auto;
+               margin-right: auto;
+               margin-top: 70px;
+               margin-bottom: 20px;
+               
+            }
+   
+            .firms-logo{
+               object-fit: cover;
+               background-repeat: no-repeat;
+               background-size: contain;
+            }
+            .firms-logo:hover{
+              background-color: #e2dfdf;
+            }
+   
+            /* trusted financial firms section ends here */
+        
+   
+            /* why valutico section starts here */
+            .why-valutico__wrapper{
+               width: 100%;
+               height: auto;
+               flex-wrap: wrap;
+               margin-top: 25px;
+               margin-left: auto;
+               margin-right: auto;
+               justify-content: center;
+               background-color: #000;  
+            }
+   
+            #why-valutico__text{
+               text-align: center;
+                   font-weight: 600;
+                   font-size: 30px;
+                   margin-top: 50px;
+                   margin-left: 25px;
+                   margin-right: 25px;
+                   color: #fff;
+                   padding-top: 80px;
+            }
+   
+            #why-valutico__desc{
+               text-align: center;
+               font-size: 17px;
+               margin-left: 15px;
+               margin-right: 15px;
+               font-weight: 450;
+               color: #fff;
+               padding: 25px;
+               line-height: 35px;
+   
+            }
+   
+            .valutico_article__wrapper{
+               display: flex;
+               width: 90%;
+               height: auto;
+               flex-wrap: wrap;
+               margin-top: 25px;
+               margin-left: auto;
+               margin-right: auto;
+               align-items: center;
+               justify-content: center;
+               background-color: #000;
+               justify-content: space-evenly;
+   
+            }
+   
+            .why-valutico__secure{
+               width: 90%;
+               height: auto;
+               flex-wrap: wrap;
+               text-align: left;
+               justify-content: left;
+               margin: 20px;
+   
+            }
+            #secure-text{
+               text-align: left;
+               justify-content: left;
+               color: #fff;
+               font-size: 20px;
+               font-weight: 700;
+                 
+            }
+   
+            #secure-desc{
+               text-align: left;
+               font-size: 14px;
+               font-weight: 550;
+               color: #fff;
+   
+            }
+            .why-valutico__reliable{
+               width: 90%;
+               height: auto;
+               flex-wrap: wrap;
+               text-align: left;
+               justify-content: left;
+               margin: 20px;
+   
+            }
+            #reliable-text{
+               text-align: left;
+               justify-content: left;
+               color: #fff;
+               font-size: 20px;
+               font-weight: 700;
+                 
+            }
+   
+            #reliable-desc{
+               text-align: left;
+               font-size: 14px;
+               font-weight: 550;
+               color: #fff;
+   
+            }
+            .why-valutico__dedicated{
+               width: 90%;
+               margin: 20px;
+               height: auto;
+               flex-wrap: wrap;
+               text-align: left;
+               justify-content: left;
+   
+            }
+            #dedicated-text{
+               text-align: left;
+               justify-content: left;
+               color: #fff;
+               font-size: 20px;
+               font-weight: 700;
+                 
+            }
+   
+            #dedicated-desc{
+               text-align: left;
+               font-size: 14px;
+               font-weight: 550;
+               color: #fff;
+   
+            }
+   
+            /* why valutico section ends here */
+   
+            /* Accurate valuations  section starts here */
+   
+            .accurate-valuation__wrapper{
+               width: 90%;
+               height: auto;
+               flex-wrap: wrap;
+               margin-top: 25px;
+               align-items: center;
+               display: block;
+   
+            }
+   
+            #accurate-valuation__header{
+               text-align: center;
+               font-weight: 700;
+               font-size: 25px;
+               margin-top: 25px;
+               margin-left: 25px;
+               margin-right: 25px;
+               padding-top: 30px;
+   
+            }
+   
+            #accurate-valuation__desc{
+               text-align: center;
+               font-size: 20px;
+               margin: 15px;
+               font-weight: 500;
+               padding: 10px;
+   
+            }
+   
+            .accurate-valuation__section{
+                display: grid;
+                grid-template-columns: auto ;
+                width: 100%;
+                height: auto;
+                margin-top: 25px;
+                
+   
+            }
+   
+            .accurate-articles__wrapper{
+               display: block;
+               width: 90%;
+                height: auto;
+                flex-wrap: wrap;
+                margin-top: 25px;
+                margin-left: auto;
+                margin-right: auto;
+                
+            }
+   
+            .personalise-report__wrapper{
+                width: 100%;
+                height: auto;
+                flex-wrap: wrap;
+                margin-top: 10px;
+                padding: 5px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                align-items: left;
+                
+   
+            }
+   
+   
+            #personalise-text{
+               text-align: left;
+               justify-content: left;
+               font-size: 20px;
+               font-weight: 700;
+   
+            }
+   
+            #personalise-desc{
+               text-align: left;
+               justify-content: left;
+               font-size: 17px;
+               font-weight: 500;
+   
+            }
+   
+            .valuation-method__wrapper{
+                
+                width: 100%;
+                height: auto;
+                flex-wrap: wrap;
+                margin-top: 10px;
+                margin-left: auto;
+                margin-right: auto;
+                align-items: left;
+                padding: 5px;
+                display: block;
+   
+            }
+   
+            #valuation-text{
+               text-align: left;
+               justify-content: left;
+               font-size: 20px;
+               font-weight: 700;
+   
+   
+            }
+            #valuation-desc{
+               text-align: left;
+               justify-content: left;
+               font-size: 17px;
+               font-weight: 500;
+   
+            }
+   
+            .fast-access__wrapper{
+                
+                width: 100%;
+                height: auto;
+                flex-wrap: wrap;
+                margin-top: 10px;
+                margin-left: auto;
+                margin-right: auto;
+                align-items: left;
+                padding: 5px;
+   
+   
+            }
+            #fast-text{
+               text-align: left;
+               justify-content: left;
+               font-size: 20px;
+               font-weight: 600;
+            }
+   
+            #fast-desc{
+               text-align: left;
+               justify-content: left;
+               font-size: 17px;
+               font-weight: 500;
+   
+            }
+   
+            .valuation-image__wrapper{
+                /* display: flex;  */
+                 width: 90%;
+                height: auto;
+                flex-wrap: wrap;
+                margin-top: 10px;
+                margin-left: auto; 
+                 margin-right: auto; 
+                 /* align-items: left;  */
+                 justify-content: center;
+                /* padding: 10px; */
+                object-fit: cover;
+                background-repeat: no-repeat;
+               background-size: contain;
+             }
+            
+                
+            /* Accurate valuations section ends here */ 
+   
+            /* request demo button section starts here */
+            
+            .request-demo__wrapper{
+               width: 70%;
+                height: auto;
+                flex-wrap: wrap;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                margin-left: auto;
+                margin-right: auto;
+                align-items: center;
+                padding: 20px;
+                text-align: center;
+   
+             }
+   
+             #request-demo__button {
+               width: 60%;
+               height: auto;
+               background-color: #39ff14;
+               color: #fff;
+               padding: 17px;
+               border-radius: 10px;
+               margin-left: auto;
+                margin-right: auto;
+               align-items: center;
+               text-align: center;
+               cursor: pointer;
+               font-size: 20px;
+                font-weight: 500;
+           }
+           #request-demo__button:hover {
+               background-color: #32e60d;
+           }
+           #request-demo__button i {
+               margin-left: 8px;
+           }
+         }
+
+
+
+
+
+       /* medium screen 768px starts here */
+
+
+
+         @media (min-width :768px){
+
+            .website-wrapper {
+                width: 100%;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                flex-wrap: wrap;
+            }
+            .navbar-wrapper {
+                width: 100%;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+                
+                display: flex;
+                padding: 20px ;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+            nav ul {
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                margin: 0;
+                padding: 10px;
+                flex: 1;
+                
+   
+            }
+            nav ul li {
+                display: inline-block;
+                position: relative;
+                margin: 0 10px;
+                
+   
+            }
+            nav ul li a {
+                display: block;
+                padding: 10px 20px;
+                text-decoration: none;
+                color: #000;
+                transition: background-color 0.3s;
+                font-size: 20px;
+                font-weight: 600;
+                display: none;
+   
+   
+            }
+            nav ul li a:hover {
+                background-color: #f0f0f0;
+                color: #333;
+            }
+            nav ul li ul {
+                display: none;
+                position: absolute;
+                background-color: #fff;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                border: 1px solid #ccc;
+                display: none;
+            }
+            nav ul li:hover ul {
+                display: block;
+            }
+            nav ul li ul li {
+                display: block;
+                white-space: nowrap;
+            }
+            nav ul li ul li a {
+                display: block;
+                padding: 10px 20px;
+                text-decoration: none;
+                color: #333;
+                transition: background-color 0.3s;
+                font-size: 15px;
+            }
+            nav ul li ul li a:hover {
+                background-color: #f0f0f0;
+            }
+            
+            .home a {
+                color: rgb(80, 151, 243);
+                font-size: 20px;
+                font-weight: 600;
+                display: none;
+            }
+            .request-demo {
+                background-color: #39ff14;
+                color: #fff;
+                padding: 20px 20px;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                font-size: 20px;
+                font-weight: 600;
+                display: none;
+            }
+            .request-demo:hover {
+                background-color: #32e60d;
+            }
+            .request-demo i {
+                margin-left: 8px;
+            }
+
+            .hamburger{
+                position: relative;
+                display: block;
+                width: 35px;
+                /* height: 35px; */
+                cursor: pointer;
+                appearance: none;
+                outline: none;
+                background: none;
+                border: none;
+    
+             }
+    
+             .hamburger .bar, .hamburger:after, .hamburger:before{
+                content: '';
+                display: block;
+                width: 100%;
+                height: 5px;
+                background-color: #000;
+                margin: 6px 0px;
+                transition: 0.4s;
+             }
+    
+             .hamburger.is-active:before{
+                transform: rotate(-45deg) translate(-9px, 6px);
+             }
+             .hamburger.is-active:after{
+                transform: rotate(45deg) translate(-9px, -8px);
+             }
+             .hamburger.is-active.bar{
+                opacity: 0;
+             }
+    
+             .mobile-nav{
+                display: block;
+                position: fixed;
+                top: 0;
+                left: 100%;
+                width: 100%;
+                min-height: 100vh;
+                z-index: 98;
+                background-color: #fff;
+                padding-top: 120px;
+                transition: 0.4s;
+             }
+    
+             .mobile-nav.is-active {
+                left: 0;
+             }
+    
+             .mobile-nav a{
+                display: block;
+                text-align: center;
+                /* margin: 0 auto 16px; */
+                padding: 12px 16px;
+                background-color: #fff;
+                /* width: fit-content; */
+                width: 100%;
+                max-width: 200px;
+                margin: 0 auto 16px;
+                text-decoration: none;
+             }
+    
+             .mobile-nav a:hover{
+                background-color: #9e9e9e;
+               
+             }
+    
+             @media (min-width: 1024px){
+                .mobile-nav{
+                    display: none;
+                }
+                .hamburger{
+                    display: none;
+                }
+             }
+    
+   
+   
+            /* leading business section starts here */
+                 .leading-business__wrapper{
+                   width: 100%;
+                   height: auto;
+                   flex-wrap: wrap;
+                   margin-left: auto;
+                   margin-right: auto;
+                   
+                 }
+   
+                 #main-text{
+                   text-align: center;
+                   font-weight: 600;
+                   font-size: 30px;
+                   margin-top: 35px;
+                   text-wrap:wrap;
+                 }
+   
+                 #leading-business__desc{
+                   text-align: center;
+                   font-size: 17px;
+                   
+                   font-weight: 500;
+                   padding-left: 25px;
+                   padding-right: 25px;
+                   text-wrap: wrap;
+                   line-height: 30px;
+                 }
+   
+                 .business-btn__wrapper{
+                   display: flex;
+                   width: 100%;
+                   height: auto;
+                   flex-wrap: wrap;
+                   margin-top: 5px;
+                   margin-left: auto;
+                   margin-right: auto;
+                   align-items: center;
+                   justify-content: center;
+                 }
+   
+                 #request-demo__btn {
+                   background-color: #39ff14;
+                   color: #fff;
+                   padding: 15px 20px;
+                   border-radius: 5px;
+                   align-items: center;
+                   cursor: pointer;
+                   margin: 15px;
+               }
+               #request-demo__btn:hover {
+                   background-color: #32e60d;
+                   color: #fff;
+               }
+   
+               #request-demo__btn i {
+                   margin-left: 8px;
+               }
+   
+               #sign-up__btn{
+                   background-color:#fff ;
+                   color:#39ff14 ;
+                   padding: 15px 30px;
+                   border-radius: 5px;
+                   align-items: center;
+                   cursor: pointer;
+                   margin: 15px;
+                   border: 1px solid #39ff14;
+               }
+   
+               #sign-up__btn:hover {
+                   background-color: #32e60d;
+                   color: #fff;
+               }
+               #sign-up__btn i {
+                   margin-left: 8px;
+               }
+   
+               .business-image__wrapper{
+                   width: 90%;
+                   height: auto;
+                   flex-wrap: wrap;
+                   margin-top: 70px;
+                   margin-left: auto;
+                   margin-right: auto;
+                   justify-content: center;
+                   
+   
+               }
+   
+               .business-hero__image{
+                   width: 100%;
+                   height: auto;
+
+                   object-fit: cover;
+                   background-repeat: no-repeat;
+                   background-size: contain;
+               }
+              
+   
+            /* leading business section ends here */
+   
+            /* trusted financial firms section starts here */
+            .trusted-firms__wrapper{
+                width: 90%;
+                height: auto;
+                flex-wrap: wrap;
+                margin-bottom: 150px;
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: center;
+                
+            }
+   
+            #trusted-text{
+                   text-align: center;
+                   font-weight: 600;
+                   font-size: 25px;
+                   margin: 20px;
+                   line-height: 40px;
+                   padding: 10px;
+   
+            }
+   
+            #trusted-desc{
+               text-align: center;
+               font-size: 20px;
+               margin: 20px;
+               font-weight: 500;
+               padding: 10px;
+               line-height: 25px;
+
+            }
+   
+            .firms-grid__wrapper{
+               width: 90%;
+               height: auto;
+               display: grid;
+               gap: 10px;
+               grid-template-columns: 30% 30% 30% ;
+               grid-template-rows: auto auto auto  ;
+               background-color: #fff;
+               padding: 10px;
+               align-content: center;
+               justify-content: center;
+               margin-left: auto;
+               margin-right: auto;
+               margin-top: 70px;
+               margin-bottom: 20px;
+               
+            }
+   
+            .firms-logo{
+               object-fit: cover;
+               background-repeat: no-repeat;
+               background-size: contain;
+            }
+            .firms-logo:hover{
+              background-color: #e2dfdf;
+            }
+   
+            /* trusted financial firms section ends here */
+        
+   
+            /* why valutico section starts here */
+            .why-valutico__wrapper{
+               width: 90%;
+               height: auto;
+               flex-wrap: wrap;
+               margin-top: 25px;
+               margin-bottom: 15px;
+               margin-left: auto;
+               margin-right: auto;
+               justify-content: center;
+               background-color: #000;  
+            }
+   
+            #why-valutico__text{
+               text-align: center;
+                   font-weight: 600;
+                   font-size: 30px;
+                   margin-top: 50px;
+                   margin-left: 25px;
+                   margin-right: 25px;
+                   color: #fff;
+                   padding-top: 80px;
+            }
+   
+            #why-valutico__desc{
+               text-align: center;
+               font-size: 15px;
+               margin-left: 17px;
+               margin-right: 17px;
+               font-weight: 450;
+               color: #fff;
+               padding: 17px;
+               line-height: 30px;
+   
+            }
+   
+            .valutico_article__wrapper{
+               width: 100%;
+               height: auto;
+               flex-wrap: wrap;
+               margin-top: 25px;
+               margin-left: auto;
+               margin-right: auto;
+               align-items: center;
+               justify-content: center;
+               background-color: #000;
+               justify-content: space-evenly;
+   
+            }
+   
+            .why-valutico__secure{
+               width: 90%;
+               height: auto;
+               flex-wrap: wrap;
+               text-align: left;
+               justify-content: left;
+   
+            }
+            #secure-text{
+               text-align: left;
+               justify-content: left;
+               color: #fff;
+               font-size: 20px;
+               font-weight: 700;
+                 
+            }
+   
+            #secure-desc{
+               text-align: left;
+               font-size: 14px;
+               justify-content: left;
+               color: #fff;
+                   
+
+            }
+            #secure-desc br{
+               display: none;
+
+            }
+            .why-valutico__reliable{
+               width: 90%;
+               height: auto;
+               flex-wrap: wrap;
+               text-align: left;
+               justify-content: left;
+               margin: 20px;
+   
+            }
+            #reliable-text{
+               text-align: left;
+               justify-content: left;
+               color: #fff;
+               font-size: 20px;
+               font-weight: 700;
+                 
+            }
+   
+            #reliable-desc{
+               text-align: left;
+               font-size: 14px;
+               font-weight: 550;
+               color: #fff;
+   
+            }
+            #reliable-desc br{
+               display: none;
+   
+            }
+            .why-valutico__dedicated{
+               width: 90%;
+               margin: 20px;
+               height: auto;
+               flex-wrap: wrap;
+               text-align: left;
+               justify-content: left;
+   
+            }
+            #dedicated-text{
+               text-align: left;
+               justify-content: left;
+               color: #fff;
+               font-size: 20px;
+               font-weight: 700;
+                 
+            }
+   
+            #dedicated-desc{
+               text-align: left;
+               font-size: 14px;
+               font-weight: 550;
+               color: #fff;
+   
+            }
+            #dedicated-desc br{
+              display: none;
+   
+            }
+   
+            /* why valutico section ends here */
+   
+            /* Accurate valuations  section starts here */
+   
+            .accurate-valuation__wrapper{
+               width: 90%;
+               height: auto;
+               flex-wrap: wrap;
+               margin-top: 25px;
+               align-items: center;
+               display: block;
+   
+            }
+   
+            #accurate-valuation__header{
+               text-align: center;
+               font-weight: 700;
+               font-size: 25px;
+               margin-top: 25px;
+               margin-left: 25px;
+               margin-right: 25px;
+               padding-top: 30px;
+   
+            }
+   
+            #accurate-valuation__desc{
+               text-align: center;
+               font-size: 20px;
+               margin: 15px;
+               font-weight: 500;
+               padding: 10px;
+   
+            }
+            #accurate-valuation__desc br{
+               display: none;
+              
+   
+            }
+   
+            .accurate-valuation__section{
+                display: flex;
+                grid-template-columns: auto ;
+                width: 100%;
+                height: auto;
+                margin-top: 25px;
+                
+   
+            }
+   
+            .accurate-articles__wrapper{
+               display: block;
+               width: 40%;
+                height: auto;
+                flex-wrap: wrap;
+                margin-top: 25px;
+                margin-left: auto;
+                margin-right: auto;
+                
+            }
+   
+            .personalise-report__wrapper{
+                width: 100%;
+                height: auto;
+                flex-wrap: wrap;
+                margin-top: 10px;
+                padding: 5px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                align-items: left;
+                
+   
+            }
+   
+   
+            #personalise-text{
+               text-align: left;
+               justify-content: left;
+               font-size: 20px;
+               font-weight: 700;
+   
+            }
+   
+            #personalise-desc{
+               text-align: left;
+               justify-content: left;
+               font-size: 18px;
+               font-weight: 500;
+   
+            }
+            #personalise-desc br{
+               display: none;
+   
+            }
+   
+            .valuation-method__wrapper{
+                
+                width: 100%;
+                height: auto;
+                flex-wrap: wrap;
+                margin-top: 10px;
+                margin-left: auto;
+                margin-right: auto;
+                align-items: left;
+                padding: 5px;
+                display: block;
+   
+            }
+   
+            #valuation-text{
+               text-align: left;
+               justify-content: left;
+               font-size: 20px;
+               font-weight: 700;
+   
+   
+            }
+            #valuation-desc{
+               text-align: left;
+               justify-content: left;
+               font-size: 18px;
+               font-weight: 500;
+   
+            }
+            #valuation-desc br{
+              display: none;
+   
+            }
+   
+            .fast-access__wrapper{
+                
+                width: 100%;
+                height: auto;
+                flex-wrap: wrap;
+                margin-top: 10px;
+                margin-left: auto;
+                margin-right: auto;
+                align-items: left;
+                padding: 5px;
+   
+   
+            }
+            #fast-text{
+               text-align: left;
+               justify-content: left;
+               font-size: 20px;
+               font-weight: 700;
+            }
+   
+            #fast-desc{
+               text-align: left;
+               justify-content: left;
+               font-size: 18px;
+               font-weight: 500;
+   
+            }
+            #fast-desc br{
+               display: none;
+   
+            }
+   
+            .valuation-image__wrapper{
+                 width: 40%;
+                height: auto;
+                flex-wrap: wrap;
+                margin-top: 10px;
+                margin-left: auto; 
+                 margin-right: auto; 
+                 justify-content: center;
+                object-fit: cover;
+                background-repeat: no-repeat;
+               background-size: contain;
+             }
+            
+             .accurate-valuation__image img{
+               width: 100%;
+               height: 700px;
+               object-fit: cover;
+               background-repeat: no-repeat;
+              background-size: contain;
+             }
+                
+            /* Accurate valuations section ends here */ 
+   
+            /* request demo button section starts here */
+            
+            .request-demo__wrapper{
+               width: 50%;
+                height: auto;
+                flex-wrap: wrap;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                align-items: center;
+                padding: 20px;
+                text-align: center;
+   
+             }
+   
+             #request-demo__button {
+               width: 60%;
+               height: auto;
+               background-color: #39ff14;
+               color: #fff;
+               padding: 25px;
+               border-radius: 10px;
+               margin-left: auto;
+                margin-right: auto;
+               align-items: center;
+               text-align: center;
+               cursor: pointer;
+               font-size: 20px;
+                font-weight: 500;
+           }
+           #request-demo__button:hover {
+               background-color: #32e60d;
+           }
+           #request-demo__button i {
+               margin-left: 8px;
+           }
+         }
+
+         /* medium screen 768px ends here */
+
+
+
+         
+         
+
+      /* large screen 1024px starts here */
+
+         .website-wrapper {
+            width: 100%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            flex-wrap: wrap;
+        }
+        .navbar-wrapper {
+            width: 100%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            display: flex;
+            padding: 50px ;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 0;
+            padding: 10px;
+            flex: 1;
+            
+
+        }
+        nav ul li {
+            display: inline-block;
+            position: relative;
+            margin: 0 10px;
+            
+
+        }
+        nav ul li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #000;
+            transition: background-color 0.3s;
+            font-size: 20px;
+            font-weight: 600;
+
+
+        }
+        nav ul li a:hover {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ccc;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        nav ul li ul li {
+            display: block;
+            white-space: nowrap;
+        }
+        nav ul li ul li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #333;
+            transition: background-color 0.3s;
+            font-size: 15px;
+        }
+        nav ul li ul li a:hover {
+            background-color: #f0f0f0;
+        }
+        
+        .home a {
+            color: rgb(80, 151, 243);
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .request-demo {
+            background-color: #39ff14;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .request-demo:hover {
+            background-color: #32e60d;
+        }
+        .request-demo i {
+            margin-left: 8px;
+        }
+
+        .hamburger{
+         display: none;
+           position: relative;
+           display: block;
+           width: 35px;
+           cursor: pointer;
+           appearance: none;
+           outline: none;
+           background: none;
+           border: none;
+
+        }
+
+        .hamburger .bar, .hamburger:after, .hamburger:before{
+           content: '';
+           display: none;
+           width: 100%;
+           height: 5px;
+           background-color: #000;
+           margin: 6px 0px;
+           transition: 0.4s;
+        }
+
+        .hamburger.is-active:before{
+         display: none;
+           transform: rotate(-45deg) translate(-9px, 6px);
+        }
+        .hamburger.is-active:after{
+         display: none;
+           transform: rotate(45deg) translate(-9px, -8px);
+        }
+        .hamburger.is-active.bar{
+         display: none;
+           opacity: 0;
+        }
+
+        .mobile-nav{
+         display: none;
+           display: block;
+           position: fixed;
+           top: 0;
+           left: 100%;
+           width: 100%;
+           min-height: 100vh;
+           z-index: 98;
+           background-color: #fff;
+           padding-top: 120px;
+           transition: 0.4s;
+        }
+
+        .mobile-nav.is-active {
+         display: none;
+           left: 0;
+        }
+
+        .mobile-nav a{
+         display: none;
+           display: block;
+           text-align: center;
+           padding: 12px 16px;
+           background-color: #fff;
+           width: 100%;
+           max-width: 200px;
+           margin: 0 auto 16px;
+           text-decoration: none;
+        }
+
+        .mobile-nav a:hover{
+         display: none;
+           background-color: #9e9e9e;
+          
+        }
+
+        @media (min-width: 768px){
+           .mobile-nav{
+               display: none;
+           }
+           .hamburger{
+               display: none;
+           }
+        }
+
+
+        /* leading business section starts here */
+             .leading-business__wrapper{
+               width: 100%;
+               height: auto;
+               flex-wrap: wrap;
+               margin: 200px;
+               margin-left: auto;
+               margin-right: auto;
+               
+             }
+
+             #main-text{
+               text-align: center;
+               font-weight: 600;
+               font-size: 60px;
+               margin: 15px;
+             }
+
+             #leading-business__desc{
+               text-align: center;
+               font-size: 20px;
+               margin: 15px;
+               font-weight: 500;
+             }
+
+             .business-btn__wrapper{
+               display: flex;
+               width: 70%;
+               height: auto;
+               flex-wrap: wrap;
+               margin-top: 20px;
+               margin-left: auto;
+               margin-right: auto;
+               align-items: center;
+               justify-content: center;
+             }
+
+             #request-demo__btn {
+               background-color: #39ff14;
+               color: #fff;
+               padding: 20px 30px;
+               border-radius: 5px;
+               align-items: center;
+               cursor: pointer;
+               margin: 15px;
+           }
+           #request-demo__btn:hover {
+               background-color: #32e60d;
+               color: #fff;
+           }
+
+           #request-demo__btn i {
+               margin-left: 8px;
+           }
+
+           #sign-up__btn{
+               background-color:#fff ;
+               color:#39ff14 ;
+               padding: 20px 30px;
+               border-radius: 5px;
+               align-items: center;
+               cursor: pointer;
+               margin: 15px;
+               border: 1px solid #39ff14;
+           }
+
+           #sign-up__btn:hover {
+               background-color: #32e60d;
+               color: #fff;
+           }
+           #sign-up__btn i {
+               margin-left: 8px;
+           }
+
+           .business-image__wrapper{
+               width: 90%;
+               height: auto;
+               flex-wrap: wrap;
+               margin-top: 10px;
+               margin-left: auto;
+               margin-right: auto;
+               justify-content: center;
+               
+
+           }
+
+           .business-hero__image{
+               width: 100%;
+               height: auto;
+               object-fit: cover;
+               background-repeat: no-repeat;
+               background-size: contain;
+           }
+          
+
+        /* leading business section ends here */
+
+        /* trusted financial firms section starts here */
+        .trusted-firms__wrapper{
+            width: 90%;
+            height: auto;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+            
+        }
+
+        #trusted-text{
+               text-align: center;
+               font-weight: 600;
+               font-size: 30px;
+               margin: 15px;
+
+        }
+
+        #trusted-desc{
+           text-align: center;
+           font-size: 20px;
+           margin: 15px;
+           font-weight: 500;
+        }
+
+        .firms-grid__wrapper{
+           width: 80%;
+           height: auto;
+           display: grid;
+           gap: 7px;
+           grid-template-columns: 25% 25% 25% 25%;
+           grid-template-rows: auto auto auto auto ;
+           background-color: #fff;
+           padding: 10px;
+           align-content: center;
+           margin-left: auto;
+           margin-right: auto;
+           margin-top: 20px;
+           margin-bottom: 20px;
+           
+        }
+
+        .firms-logo{
+           object-fit: cover;
+           background-repeat: no-repeat;
+           background-size: contain;
+        }
+        .firms-logo:hover{
+          background-color: #e2dfdf;
+        }
+
+        /* trusted financial firms section ends here */
+    
+
+        /* why valutico section starts here */
+        .why-valutico__wrapper{
+           width: 100%;
+           height: auto;
+           flex-wrap: wrap;
+           margin-top: 25px;
+           margin-left: auto;
+           margin-right: auto;
+           justify-content: center;
+           background-color: #000;  
+        }
+
+        #why-valutico__text{
+           text-align: center;
+               font-weight: 700;
+               font-size: 35px;
+               margin-top: 25px;
+               margin-left: 25px;
+               margin-right: 25px;
+               color: #fff;
+               padding-top: 30px;
+        }
+
+        #why-valutico__desc{
+           text-align: center;
+           font-size: 20px;
+           margin: 15px;
+           font-weight: 600;
+           color: #fff;
+           padding: 10px;
+
+        }
+
+        .valutico_article__wrapper{
+           display: flex;
+           width: 100%;
+           height: auto;
+           flex-wrap: wrap;
+           margin-top: 25px;
+           margin-left: auto;
+           margin-right: auto;
+           align-items: center;
+           justify-content: center;
+           background-color: #000;
+           justify-content: space-evenly;
+
+        }
+
+        .why-valutico__secure{
+           width: 20%;
+           height: auto;
+           flex-wrap: wrap;
+           text-align: left;
+           justify-content: left;
+           margin: 20px;
+
+        }
+        #secure-text{
+           text-align: left;
+           justify-content: left;
+           color: #fff;
+           font-size: 20px;
+           font-weight: 700;
+             
+        }
+
+        #secure-desc{
+           text-align: left;
+           font-size: 14px;
+           
+           font-weight: 550;
+           color: #fff;
+
+        }
+        .why-valutico__reliable{
+           width: 20%;
+           height: auto;
+           flex-wrap: wrap;
+           text-align: left;
+           justify-content: left;
+           margin: 20px;
+
+        }
+        #reliable-text{
+           text-align: left;
+           justify-content: left;
+           color: #fff;
+           font-size: 20px;
+           font-weight: 700;
+             
+        }
+
+        #reliable-desc{
+           text-align: left;
+           font-size: 14px;
+           font-weight: 550;
+           color: #fff;
+
+        }
+        .why-valutico__dedicated{
+           width: 20%;
+           margin: 20px;
+           height: auto;
+           flex-wrap: wrap;
+           text-align: left;
+           justify-content: left;
+
+        }
+        #dedicated-text{
+           text-align: left;
+           justify-content: left;
+           color: #fff;
+           font-size: 20px;
+           font-weight: 700;
+             
+        }
+
+        #dedicated-desc{
+           text-align: left;
+           font-size: 14px;
+           font-weight: 550;
+           color: #fff;
+
+        }
+
+        /* why valutico section ends here */
+
+        /* Accurate valuations  section starts here */
+
+        .accurate-valuation__wrapper{
+           width: 90%;
+           height: auto;
+           flex-wrap: wrap;
+           margin-top: 25px;
+           margin-left: auto;
+           margin-right: auto;
+           align-items: center;
+           justify-content: center;
+           
+
+        }
+
+        #accurate-valuation__header{
+           text-align: center;
+           font-weight: 700;
+           font-size: 25px;
+           margin-top: 25px;
+           margin-left: 25px;
+           margin-right: 25px;
+           padding-top: 30px;
+
+        }
+
+        #accurate-valuation__desc{
+           text-align: center;
+           font-size: 20px;
+           margin: 15px;
+           font-weight: 500;
+           padding: 10px;
+
+        }
+
+        .accurate-valuation__section{
+            display: grid;
+            grid-template-columns: 30% 60%;
+            width: 100%;
+            height: auto;
+            margin-top: 25px;
+           
+        }
+
+        .accurate-articles__wrapper{
+           display: block;
+           width: 90%;
+            height: auto;
+            flex-wrap: wrap;
+            margin-top: 25px;
+            margin-left: 100px;
+            
+            justify-content: space-between;
+        }
+
+        .personalise-report__wrapper{
+            width: 100%;
+            height: auto;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            padding: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: left;
+
+        }
+
+
+        #personalise-text{
+           text-align: left;
+           justify-content: left;
+           font-size: 20px;
+           font-weight: 700;
+
+        }
+
+        #personalise-desc{
+           text-align: left;
+           justify-content: left;
+           font-size: 17px;
+           font-weight: 500;
+
+        }
+
+        .valuation-method__wrapper{
+            
+            width: 100%;
+            height: auto;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: left;
+            padding: 5px;
+
+        }
+
+        #valuation-text{
+           text-align: left;
+           justify-content: left;
+           font-size: 20px;
+           font-weight: 700;
+
+
+        }
+        #valuation-desc{
+           text-align: left;
+           justify-content: left;
+           font-size: 17px;
+           font-weight: 500;
+
+        }
+
+        .fast-access__wrapper{
+            
+            width: 100%;
+            height: auto;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: left;
+            padding: 5px;
+
+
+        }
+        #fast-text{
+           text-align: left;
+           justify-content: left;
+           font-size: 20px;
+           font-weight: 600;
+        }
+
+        #fast-desc{
+           text-align: left;
+           justify-content: left;
+           font-size: 17px;
+           font-weight: 500;
+
+        }
+
+        .valuation-image__wrapper{
+            display: flex; 
+             width: 100%;
+            height: auto;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            margin-left: 30%; 
+             margin-right: auto; 
+             justify-content: center;
+            object-fit: cover;
+            background-repeat: no-repeat;
+           background-size: contain;
+         }
+        
+            
+        /* Accurate valuations section ends here */ 
+
+        /* request demo button section starts here */
+        
+        .request-demo__wrapper{
+           width: 40%;
+            height: auto;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            padding: 10px;
+            text-align: center;
+
+         }
+
+         .request-demo__button {
+           width: 20px;
+           height: auto;
+           background-color: #39ff14;
+           color: #fff;
+           padding: 10px;
+           border-radius: 10px;
+           align-items: center;
+           text-align: center;
+           cursor: pointer;
+           font-size: 20px;
+            font-weight: 600;
+       }
+       .request-demo__button:hover {
+           background-color: #32e60d;
+       }
+       .request-demo__button i {
+           margin-left: 8px;
+       }
+
+       /* large screen 1024px ends here */
